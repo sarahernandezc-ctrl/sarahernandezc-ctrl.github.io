@@ -4,7 +4,7 @@
 .right-arrow-icon {
   width: 16px;
   height: 16px;
-  margin-top: 1px;
+  margin-top: 1px; 
 }
 
 .footer-icon {
@@ -38,7 +38,7 @@ a.icon-link:hover {
 }
 
 .nav-title-link {
-  color: black;
+  color: #116664;
   text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ a.button {
   border: 3px solid #141414;
   border-radius: 50px;
   color: black;
-  text-decoration: none;
+  background-color: LightGrey;
   width: fit-content;
   display: flex;
   gap: 5px;
