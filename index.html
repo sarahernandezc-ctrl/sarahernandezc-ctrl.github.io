@@ -5,14 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <style>
-
      body {font-family: ans-serif;}
-     .Background {
-       background-color: #99c9de;
+       .Background {
+       background-color: #3c485e;
        color: white;
        margin: -10px;
        padding:10px;
-           }           
+           }         
+     ul {
+         list-style: none;      
+         padding: 10;
+         margin: 10;
+        }
+     li {
+         display: inline-block; 
+         margin: 0 15px;   
+        }
+     a {
+         text-decoration: none;
+         color: white;
+     }
+     nav a:hover {
+         color: black;
+         }
+        .galeria {
+       display: flex;          
+       justify-content: center; 
+       gap: 20px;              
+       }
+       .galeria img {
+        width: 200px;
+        height: auto;
+       }
     </style>
 </head>
 
@@ -21,11 +45,11 @@
     <div class="Background">
       <header>
         <nav>
-            <ul>
-                <li style="text-align:center;"><a href="index.html">Inicio</a></li>
-                <li style="text-align:center;"><a href="Pag2.html">Proyectos</a></li>
-                <li style="text-align:center;"><a href="#">Sobre mí</a></li>
-                <li style="text-align:center;"><a href="#">Contacto</a></li>
+            <ul style="font-size:150%;">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pag2.html">Proyectos</a></li>
+                <li><a href="#">Sobre mí</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
       </header>
@@ -36,25 +60,33 @@
 
         <!-- SECCIÓN DE BIENVENIDA -->
         <section>
-            <h1 style=>Bienvenido a mi Portfolio</h1>
-            <p>Este es un ejemplo de estructura básica con HTML semántico.</p>
+            <h1>Bienvenido a mi Portfolio</h1>
+            <p>Estos son algunos proyectos: </p>
         </section>
 
         <!-- ARTÍCULO DE PROYECTO -->
         <nav>
-            <h2>Proyecto Destacado</h2>
+            <h2>Proyecto Destacado</h2> 
 
-            <figure>
+            <figure style= ".galeria">
                 <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <figcaption>Descripción breve del proyecto mostrado en la imagen.</figcaption>
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+            </figure>
+            <figure style= ".galeria">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
+                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
             </figure>
         </nav>
 
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>© 2026 – Sara Hernández</p>
+    <footer class="Background">
+        <p color = "White">© 2026 – Sara Hernández</p>
     </footer>
 
 </body>
