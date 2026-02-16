@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <style>
-     body {font-family: ans-serif;}
+     body {
+         font-family: sans-serif;
+         width:100%;
+     }
+     main {
+         width:100%;
+     }
        .Background {
        background-color: #3c485e;
        color: white;
@@ -14,12 +20,12 @@
            }         
      ul {
          list-style: none;      
-         padding: 10;
-         margin: 10;
+         padding: 10px;
+         margin: 10px;
         }
      li {
          display: inline-block; 
-         margin: 0 15px;   
+         margin: 0px 15px;   
         }
      a {
          text-decoration: none;
@@ -28,15 +34,16 @@
      nav a:hover {
          color: black;
          }
-        .galeria {
-       display: flex;          
-       justify-content: center; 
-       gap: 20px;              
-       }
-       .galeria img {
-        width: 200px;
-        height: auto;
-       }
+     img {
+      max-width: 100%;
+      height: auto;
+     }
+        .separador {
+            margin: -10px;
+            height: 20px;
+            background-color: #3c485e;
+            border: none;
+        }
     </style>
 </head>
 
@@ -47,9 +54,9 @@
         <nav>
             <ul style="font-size:150%;">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="Pag2.html">Proyectos</a></li>
-                <li><a href="#">Sobre mí</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#sobremi">Sobre mí</a></li>
+                <li><a href="Pag2.html">Contacto</a></li>
             </ul>
         </nav>
       </header>
@@ -57,31 +64,50 @@
     
     <!-- CONTENIDO PRINCIPAL -->
     <main>
-
+        <!-- linea separadora -->
         <!-- SECCIÓN DE BIENVENIDA -->
         <section>
+            <br/>
             <h1>Bienvenido a mi Portfolio</h1>
+            <img src="Imagenes\Perfil.webp" alt="Imagen Perfil">
+            <h2 id="sobremi">Sobre mi</h2>
+            <p>Hola, soy Sara y este es mi portfolio. Tengo un grado superior en Animaciones 3D, Juegos y Entornos Interactivos. Estos son algunos dibujos y modelos 3D que he hecho a lo largo del grado.</p>
+            <h3 style="text-decoration: underline;"> Programas que se usar: <h3/>
+            <img src="Imagenes\Premiere.webp" width="150" height="150">
+            <img src="Imagenes\After.webp" width="150" height="150">
+            <img src="Imagenes\Ilustrator.webp" width="150" height="150">
+            <img src="Imagenes\indising.webp" width="150" height="150">
+            <img src="Imagenes\Blender.webp" width="150" height="150">
+            <img src="Imagenes\Maya.webp" width="150" height="150">
+            <img src="Imagenes\krita.webp" width="150" height="150">
+            <img src="Imagenes\procreate.webp" width="150" height="150">
+            <br />
+            <br />
+            <br />
+            <hr class="separador" />
+            <h2 id="proyectos">Proyectos</h2>
             <p>Estos son algunos proyectos: </p>
+            <div>
+                <img src="Imagenes\Parpadeo2.gif" width="1080" height="620">
+            </div>
+            <img src="Imagenes\caminar_lat.gif" width="1080" height="620">
+            <div>
+                <img src="Imagenes\LowPoly.webp" width="1080" height="620">
+            </div>
+            <img src="Imagenes\png-tuver.webp" width="820" height="650">
         </section>
 
         <!-- ARTÍCULO DE PROYECTO -->
-        <nav>
-            <h2>Proyecto Destacado</h2> 
-
-            <figure style= ".galeria">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-            </figure>
-            <figure style= ".galeria">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-                <img src="Imagenes\Perfil.jpg" alt="Imagen Perfil" width="250" height="250">
-            </figure>
-        </nav>
-
+        <h2>Proyecto Destacado</h2>
+        <div>
+            <img src="Imagenes\Fondo.webp" width="1080" height="720">
+        </div>
+        <img src="Imagenes\Dragón.webp" width="600" height="600">
+        <div>
+            <img src="Imagenes\Chica.webp" width="500" height="450">
+            <img src="Imagenes\Tacones.webp" width="480" height="450">
+        </div>
+        <br />
     </main>
 
     <!-- PIE DE PÁGINA -->

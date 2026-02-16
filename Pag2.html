@@ -1,11 +1,92 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+﻿﻿<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            width: 100%;
+        }
+
+        main {
+            width: 100%;
+        }
+
+        .Background {
+            background-color: #3c485e;
+            color: white;
+            margin: -10px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        li {
+            display: inline-block;
+            margin: 0px 15px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .separador {
+            margin: -10px;
+            height: 20px;
+            background-color: #3c485e;
+            border: none;
+        }
+    </style>
 </head>
-<body>
+
+<body style="text-align:center;">
+    <!-- HEADER + NAVEGACIÓN -->
+    <div class="Background">
+        <header>
+            <nav>
+                <ul style="font-size:150%;">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#proyectos">Proyectos</a></li>
+                    <li><a href="index.html#sobremi">Sobre mí</a></li>
+                    <li><a href="Pag2.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- linea separadora -->
+        <!-- SECCIÓN DE BIENVENIDA -->
+        <section>
+            <br />
+            <img src="Imagenes\Perfil.webp" alt="Imagen Perfil">
+            <h1>Contacto: </h1>
+            <p>sarahernandezproyects@gmail.com</p>
+            <br />
+
+        </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="Background">
+        <p color="White">© 2026 – Sara Hernández</p>
+    </footer>
 
 </body>
 </html>
